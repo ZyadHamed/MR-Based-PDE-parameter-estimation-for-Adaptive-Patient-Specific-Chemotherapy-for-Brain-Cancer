@@ -3,7 +3,7 @@ Accurately modeling tumor progression and drug interactions in brain cancer
 treatment remains challenging. Current approaches lack patient-specific
 frameworks that dynamically adapt treatment plans using real-time imaging
 feedback and efficiently solve spatiotemporal models for personalized drug
-delivery 🧠
+delivery 
 # PDE Model
 
 <h3 align="center">Modified PDE Model and Parameter Interpretation</h3>
@@ -23,3 +23,26 @@ delivery 🧠
 </table>
 
 # Methodology
+- Implemented Brain and Tumor Segmentation
+- Implemented PINNs and DeepONet PDE solvers
+- Implemented patient-specific diffusivity and initial condition estimation
+- Integrated the aforementioned models into one compact system.
+<img width="972" height="540" alt="image" src="https://github.com/user-attachments/assets/485eff15-f965-4488-9cf2-79c83f111095" />
+
+# Results
+
+- Deep learning solvers were 59 times faster than the fastest numerical solver. 
+- The achieved Dice scores were 0.89 for tumor segmentation and 0.9881 for brain segmentation. 
+- The PINN and DeepONet models achieved mean errors of 0.134 and 0.003286.
+
+<img width="2323" height="770" alt="image" src="https://github.com/user-attachments/assets/7dcca1ad-18ee-4b1c-a34b-f64560e3f549" />
+
+
+# Conclusion:
+
+- We developed a 3D PDE-based framework for patient-specific      brain cancer treatment planning using MRI segmentation and ADC maps.
+- We compared two deep learning models: Physics Informed Neural Network (PINN) and Deep Operator Network (DeepONet).
+- Based on results, DeepONet performed better in generalization and solved PDEs at unseen conditions without retraining.
+- This approach enables rapid evaluation of treatment scenarios, allowing identification of optimal chemotherapy strategies for adaptive, patient-specific care
+
+For more details, check out our full paper attached in the repository!
