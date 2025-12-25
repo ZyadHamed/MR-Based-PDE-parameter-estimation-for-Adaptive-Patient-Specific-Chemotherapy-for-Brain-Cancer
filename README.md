@@ -38,11 +38,19 @@ delivery
 <img width="2323" height="770" alt="image" src="https://github.com/user-attachments/assets/7dcca1ad-18ee-4b1c-a34b-f64560e3f549" />
 
 
-# Conclusion:
+# Conclusion
 
-- We developed a 3D PDE-based framework for patient-specific      brain cancer treatment planning using MRI segmentation and ADC maps.
+- We developed a 3D PDE-based framework for patient-specific brain cancer treatment planning using MRI segmentation and ADC maps.
 - We compared two deep learning models: Physics Informed Neural Network (PINN) and Deep Operator Network (DeepONet).
 - Based on results, DeepONet performed better in generalization and solved PDEs at unseen conditions without retraining.
 - This approach enables rapid evaluation of treatment scenarios, allowing identification of optimal chemotherapy strategies for adaptive, patient-specific care
+
+
+# Future Work
+- Train DeepONet on more initial conditions to improve accuracy and extend generalization across different diffusivity values.
+- Calculate diffusivity from a single MRI image instead of relying on multiple scanning techniques..
+- Develop a physical prototype for implementing adaptive treatment plan recommendations in clinical practice.
+
+
 
 For more details, check out our full paper attached in the repository!
