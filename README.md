@@ -23,5 +23,3 @@ delivery 🧠
 </table>
 
 # Methodology
-## Tumor Detection
-## Brain SEgmentation
